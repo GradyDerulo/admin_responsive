@@ -1,0 +1,85 @@
+// BG
+$main-bg: #2a3447;
+$soft-bg: #384256;
+$dark-bg: #222b3c;
+
+//TEXT
+$main-color: white;
+$soft-color: #ddd;
+$dark-color: #2a3447;
+
+/* @import "./variable.scss"; */
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (max-width: ($xxl)) {
+    @content;
+  }
+}
+/* @import "./responsive.scss";
+--------------------------------------------------------------------------- */
+
+.menu{
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px; /* pr se separer des autres item */
+
+    .title{
+        font-size: 12px;
+        font-weight: 200;
+        color: $soft-color;
+        text-transform: uppercase;
+
+        @include lg{ /*  1024px; */
+          display: none;
+        }
+    }
+    .listItem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover{
+            background-color: $soft-bg;
+        }
+
+
+        .listItemTitle{
+          @include lg{ /*  1024px; */
+            display: none;
+          }
+        }
+    }
+}
+
+
+}

@@ -1,0 +1,58 @@
+// BG
+$main-bg: #2a3447;
+$soft-bg: #384256;
+$dark-bg: #222b3c;
+
+//TEXT
+$main-color: white;
+$soft-color: #ddd;
+$dark-color: #2a3447;
+
+/* @import "./variable.scss"; */
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (max-width: ($xxl)) {
+    @content;
+  }
+}
+/* @import "./responsive.scss";
+--------------------------------------------------------------------------- */
+
+.barChartBox{
+    width: 100%;
+    height: 100%;
+  
+    h1{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .chart{
+       /*  height: 100%; coté jsx on a deja defini son hauteur <ResponsiveContainer width="99%" height={150}>*/
+    }
+  }

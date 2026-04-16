@@ -1,0 +1,106 @@
+// BG
+$main-bg: #2a3447;
+$soft-bg: #384256;
+$dark-bg: #222b3c;
+
+//TEXT
+$main-color: white;
+$soft-color: #ddd;
+$dark-color: #2a3447;
+
+/* @import "./variable.scss"; */
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (max-width: ($xxl)) {
+    @content;
+  }
+}
+/* @import "./responsive.scss";
+--------------------------------------------------------------------------- */
+.navbar{
+    width: 100%;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        display:flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon{
+            @include sm{ /* 480px; */
+               display: none;
+              }
+        }
+
+    }
+    .notification{
+        position: relative;
+        
+        span{
+            background-color: red;
+            color:white;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+
+        }
+    }
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+
+
+}

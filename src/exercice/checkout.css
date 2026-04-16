@@ -1,0 +1,17 @@
+.checkout{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.checkout .checkoutW{
+    height: 320px;
+    width: 400px;
+    background-color: yellow;
+    padding: 10px 14px;
+}

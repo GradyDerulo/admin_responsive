@@ -1,0 +1,160 @@
+.exercice{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999;
+}
+
+.lien{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+/* -------------- each casier ------------ */
+.ParentC{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));/* version desktop par défaut */
+    gap: 1.5rem;  /* 24px */
+    margin-top: 1.25rem;
+   
+    padding-bottom: 14px;
+    overflow: hidden;
+    border: 2px solid red;
+
+}
+@media screen and (max-width:1200px) {
+.list_busines .container_cardBusiness{
+    grid-template-columns: repeat(3, 1fr);/* version tablette */
+}
+    
+}
+@media screen and (max-width:768px) {
+    .list_busines .container_cardBusiness{
+        grid-template-columns: repeat(2, 1fr);/* version Mobile */
+    }
+        
+    }
+    @media screen and (max-width:500px) {
+        .list_busines .container_cardBusiness{
+            grid-template-columns: repeat(1, 1fr);/* version Mobile */
+        }
+            
+        }
+.cardBusiness{
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,0.06); /* box shadow md */
+    border-radius: 0.5rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4,0,0.2, 1); /* ease in out */
+    transition-duration: 150ms; 
+}
+.cardBusiness:hover{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* box shadow lg */
+    /* color: #fece51; */
+    box-shadow: 0 10px 15px -3px #fece51, 
+                0 4px 6px -2px #fece51;
+    transform: scale(1.05);
+}
+.cardBusiness img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+/* @media screen and (max-width:768px) {
+    .cardBusiness img{
+        height: 150px;
+    }
+        
+    } */
+
+.details_agent{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0.75rem;
+    gap: 0.25rem;
+}
+.details_agent .businesCategory{
+    padding: 3px 8px;
+    background-color: #fef08a;
+    color: #fece51;
+    border-radius: 9999px;
+    font-size: 14px;
+}
+.details_agent .businesName{
+    font-family: poppins_3;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.details_agent .businesContact{
+    color: #fece51;
+    font-size: 14px;
+}
+.businesAddress{
+    color: #6b7280;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem;
+}
+.details_agent button{
+    border: none;
+    outline: none;
+    background-color: #fece51;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 8px 12px;
+    color: white;
+    font-family: poppins_3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
