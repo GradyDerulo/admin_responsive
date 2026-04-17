@@ -8,7 +8,7 @@ import "./user.scss";
     title: "Grady ",
     img: "/profile.jpg",
     info: {
-      username: "Grady Manga",
+      username: "Grady ",
       fullname: "Grady Manga",
       email: "derumanga@gmail.com",
       phone: "+243 854 969 505",
