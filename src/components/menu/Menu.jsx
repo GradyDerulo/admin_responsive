@@ -6,7 +6,7 @@ import { menu } from "../../data";
 const Menu = ()=> {
 
   return (
-    <div className="menu">
+    <div className="menu" >
       
    {
     menu.map(item => (

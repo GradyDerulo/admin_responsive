@@ -30,7 +30,8 @@ export const menu = [
       {
         id: 2,
         title: "Products",
-        url: "/products",
+        /* url: "/products", */
+         url: "#",
         icon: "product.svg",
       },
       /*   {
@@ -330,7 +331,7 @@ export const barChartBoxVisit = {
 export const userRows = [
   {
     id: 1,
-    img: "use6.jpg",
+    img: "profile.jpg",
     lastName: "Hubbard",
     firstName: "Eula",
     email: "kewez@@gmail.com",
@@ -350,7 +351,7 @@ export const userRows = [
   },
   {
     id: 3,
-    img: "use6.jpg",
+    img: "use8.jpg",
     lastName: "Greer",
     firstName: "Mary",
     email: "ujudokon@hottmail.com",
@@ -360,7 +361,7 @@ export const userRows = [
   },
   {
     id: 4,
-    img: "use6.jpg",
+    img: "use7.jpeg",
     lastName: "Williamson",
     firstName: "Mildred",
     email: "tinhavabe@gmail.com",
@@ -370,9 +371,9 @@ export const userRows = [
   },
   {
     id: 5,
-    img: "use6.jpg",
-    lastName: "Gross",
-    firstName: "Jose",
+    img: "profile.jpg",
+    lastName: "Manga",
+    firstName: "Grady",
     email: "gobtagbes@yahoo.com",
     phone: "123 456 789",
     createdAt: "01.02.2023",

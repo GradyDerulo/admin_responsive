@@ -4,6 +4,7 @@ import Add from "../../components/add/Add";
 import { userRows } from "../../data";
 import  DataTable from "../../components/dataTable/DataTable"
 
+//use6
 
 const columns = [
   { field: "id", headerName: "ID", flex:1, minWidth: 50},
@@ -56,23 +57,7 @@ const columns = [
 
 function Users() {
 
-    const [open, setOpen] = useState(false); /* L'implementer coté js vanilla  */
-
-
-     // TEST THE API
-    //avec la librairie:  @tanstack/react-query  
-    //VOir comment il enveloppe dans App.jsx
-
-
-  // const { isLoading, data } = useQuery({
-  //   queryKey: ["allusers"],
-  //   queryFn: () =>
-  //     fetch("http://localhost:8800/api/users").then(
-  //       (res) => res.json()
-  //     ),
-  // });
-
-
+    const [open, setOpen] = useState(false); 
     return (
       <div className="users" style={{width:"100%", overflowX:"auto"}}>
       <div className="info">
@@ -80,13 +65,7 @@ function Users() {
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
-      {/* TEST THE API */}
-
-      {/* {isLoading ? (
-        "Loading..."
-      ) : (
-        <DataTable slug="users" columns={columns} rows={data} />
-      )} */} 
+     
       {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
     )

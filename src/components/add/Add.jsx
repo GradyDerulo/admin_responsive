@@ -21,32 +21,24 @@ const Add = (props)=> {
           <form onSubmit={handleSubmit}>
           
                 <div className="item">
-                  <label>Avatar</label>
+                  <label>FirstName</label>
                   <input type="text" placeholder="avatar" />
                 </div>
                 <div className="item">
-                  <label>Avatar</label>
+                  <label>LastName</label>
                   <input type="text" placeholder="avatar" />
                 </div>
                 <div className="item">
-                  <label>Avatar</label>
+                  <label>Email</label>
                   <input type="text" placeholder="avatar" />
                 </div>
                 <div className="item">
-                  <label>Avatar</label>
+                  <label>Telephone</label>
                   <input type="text" placeholder="avatar" />
                 </div>
                 <div className="item">
                   <label>Avatar</label>
                   <input type="text"placeholder="avatar" />
-                </div>
-                <div className="item">
-                  <label>Avatar</label>
-                  <input type="text" placeholder="avatar" />
-                </div>
-                <div className="item">
-                  <label>Avatar</label>
-                  <input type="text" placeholder="avatar" />
                 </div>
 
             <button>Send</button>

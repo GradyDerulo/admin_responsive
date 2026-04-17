@@ -1,9 +1,37 @@
 .dataTable{
-  width: 90%;
-  margin: 0 auto;
+/*   width: 90%;
+  margin: 0 auto; */
+  width: 100%;
+  overflow-x: auto; // Permet le scroll interne si les colonnes sont trop larges
+
+
+
     .dataGrid{
       background: white;
       padding: 20px;
+
+      min-width: 600px; // Force une largeur minimale pour garder la lisibilité sur mobile
+
+    width: 100% !important; // Force la largeur
+    
+    // Si vous utilisez Flexbox dans le layout parent (ex: sidebar + content)
+    max-width: calc(100vw - 250px); // Ajustez 300px selon la largeur de votre sidebar
+                              /* "Prends toute la largeur de l'écran, mais laisse 300px de place pour 
+                                le menu à gauche, et ne dépasse pas le reste." */
+
+      @media (max-width: 768px) {
+     /*  max-width: 100%; */
+      min-width: 100%;
+    }
+
+     @media (max-width: 600px) {
+    .MuiDataGrid-columnHeader[data-field="email"],
+    .MuiDataGrid-cell[data-field="email"],
+    .MuiDataGrid-columnHeader[data-field="createdAt"],
+    .MuiDataGrid-cell[data-field="createdAt"] {
+      display: none !important;
+    }
+  }
   
       .MuiDataGrid-toolbarContainer{
         flex-direction: row-reverse;

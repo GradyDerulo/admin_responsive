@@ -5,8 +5,8 @@ const Footer = ()=> {
 
     return (
         <div className="footer">
-                <span>DeruloAdmin</span>
-                <span>&copy; DeruloDev Admin Dashboard </span>
+                <span>GradyAdmin</span>
+                <span>&copy; GradyAdmin Admin Dashboard </span>
 
 
         </div>

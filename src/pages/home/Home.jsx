@@ -11,7 +11,7 @@ import "./home.scss";
 function Home() {
 
     return (
-        <div className="home">
+        <div className="home" >
             <div className="box box1" > <TopBox /> </div>
             <div className="box box2"><ChartBox {...chartBoxUser}/></div> {/* TinyLineChart */}
              <div className="box box3"><ChartBox {...chartBoxProduct}/></div>

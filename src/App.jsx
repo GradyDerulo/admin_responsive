@@ -21,11 +21,11 @@ const Layout = () =>{
 
   <Navbar/>
  {/*  <Exercise/> */}
-  <div className="container">
-    <div className="menuContainer">
+  <div className="container"> {/* A retenir qu'il est en display FLEX */}
+    <div className="menuContainer" > {/*  NE FAIS QUE width: 250px; */}
     <Menu/>    
     </div>
-    <div className="contentContainer">
+    <div className="contentContainer">  {/* LUI PRENDS LE RESTE DONC 100% - 250px */}
     <Outlet />
     </div>
   </div>
@@ -36,31 +36,7 @@ const Layout = () =>{
     </div>
   )
 }
-//-----------------------------------------------
 
-
-
-/* const router_1 = createBrowserRouter([
-  {
-    path:"/",
-    element: (
-      <Home/>
-    ),
-  },
-  {
-    path:"/users",
-    element: (
-      <Users/>
-    ),
-  },
-  {
-    path:"/products",
-    element: (
-      <Products/>
-    ),
-  },
-])
- */
 
 const router = createBrowserRouter([
   {

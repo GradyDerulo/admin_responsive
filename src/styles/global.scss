@@ -65,7 +65,16 @@ $xxl: 1400px;
 .container{
   display: flex;
 
+  min-width: 0;
 
+/*   Par défaut, les éléments Flexbox ont une propriété min-width définie sur auto.
+   Cela signifie qu'un élément refuse de devenir plus petit que son contenu. 
+   Comme le DataGrid contient beaucoup de données, 
+   il dit au parent : "Je ne peux pas rétrécir". En forçant min-width: 0;,
+    tu casses cette règle et tu autorises le parent à réduire la taille du tableau. */
+
+
+    
   /* @include xxl{   1400px; 
     background-color: rgba(255,0,0, 0.101);
   }
